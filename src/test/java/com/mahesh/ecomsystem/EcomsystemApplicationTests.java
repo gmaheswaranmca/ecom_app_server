@@ -1,10 +1,10 @@
-package com.example.people_app;
+package com.mahesh.ecomsystem;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class PeopleAppApplicationTests {
+class EcomsystemApplicationTests {
 
 	@Test
 	void contextLoads() {

@@ -1,0 +1,10 @@
+products: {_id,name,description,category,price,stock,tags}
+category: Electronics / Furniture / Home / Fashion
+users: {_id,name,email,password,street,city,zip,createdAt}
+orders: {_id,userId,items,totalAmount,status,createdAt}
+items[I].item {productId, qty, price}
+status: pending / shipped / delivered / cancelled
+reviews: {_id,productId,userId,rating,comment,createdAt}
+admins: {_id,name,email,password,role,createdAt}
+role: Manager / Supervisor / Agent
+Hard Coded admins (no pages)

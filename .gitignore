@@ -13,6 +13,12 @@ target/
 .springBeans
 .sts4-cache
 
+# Eclipse specific
+/.classpath
+/.project
+/.settings/
+/bin/
+
 ### IntelliJ IDEA ###
 .idea
 *.iws
@@ -34,3 +40,4 @@ build/
 
 ### Keep Secrets Out of Git
 .env
+

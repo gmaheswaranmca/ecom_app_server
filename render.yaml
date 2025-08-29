@@ -1,5 +1,0 @@
-services:
-  - type: web
-    name: ecom-app-server
-    env: docker
-    plan: free
