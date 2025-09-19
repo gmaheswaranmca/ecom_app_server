@@ -23,7 +23,7 @@ public class ProductController {
 	@Autowired
 	private ProductService productService;
 	
-	@PostMapping("/save")
+	@PostMapping("/admin/save")
 	public Product save(@RequestBody Product product) {
 		return productService.saveProduct(product);
 	}
@@ -35,12 +35,12 @@ public class ProductController {
 	public List<Product> findAll(){
 		return productService.getProducts();
 	}
-	@PutMapping("/{id}")
-	public Product UpdateProduct(Product product,String id) {
+	@PutMapping("/admin/{id}")
+	public Product UpdateProduct(@RequestBody Product product, @PathVariable String id) {
 		return productService.updateProduct(product, id);
 	}
-	@DeleteMapping("/{id}")
-	public boolean deleteProduct(String id) {
+	@DeleteMapping("/admin/{id}")
+	public boolean deleteProduct(@PathVariable String id) {
 		return productService.deleteProduct(id);
 	}
 
