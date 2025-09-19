@@ -18,7 +18,7 @@ import com.mahesh.ecomsystem.service.ProductService;
 
 @RestController
 @RequestMapping("/products")
-@CrossOrigin("*")
+//@CrossOrigin("*")
 public class ProductController {
 	@Autowired
 	private ProductService productService;

@@ -12,7 +12,6 @@ import com.mahesh.ecomsystem.jwt.JwtUtil;
 import com.mahesh.ecomsystem.repository.CustomerRepository;
 
 @RestController
-@CrossOrigin("*")
 public class CustomerController {
 	@Autowired
 	private CustomerRepository repo;
